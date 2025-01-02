@@ -41,7 +41,7 @@ const Ñ = ['Ñ', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio
 
 // Numbers
 const numberOne = ['1', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/1.wav", ". _ _ _ _"];
-const numberTwo = ['2', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio2.wav", ". . _ _ _"];
+const numberTwo = ['2', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/2.wav", ". . _ _ _"];
 const numberThree = ['3', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/3.wav", ". . . _ _"];
 const numberFour = ['4', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/4.wav", ". . . . _"];
 const numberFive = ['5', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/5.wav", ". . . . ."];
