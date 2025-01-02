@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url(img/background.webp) no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+/* Header Styles */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.8);
+    /* Semi-transparent background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo h1 {
+    font-size: 28px;
+    margin: 0;
+    color: white;
+}
+
+.logo .highlight {
+    color: gray;
+    /* Glowing blue color */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+
+    color: gray
+        /* color: #00d4ff; */
+        /* Highlight on hover */
+}
+
+/* General Styles for Main Section */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+    width: 100%;
+}
+
+.nav-main {
+    background: rgba(0, 0, 0, 0.95);
+    /* Semi-transparent black background */
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    /* Smooth shadow for depth */
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+.ul-main {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Adds spacing between list items */
+}
+
+.li-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* Space between elements inside list items */
+}
+
+/* Input and Button Styles */
+input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background: #3c6972;
+    /* Bright blue for a modern feel */
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #02aeec;
+    /* Darker blue on hover */
+}
+
+img {
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+    /* Slightly enlarges the icon on hover */
+}
+
+/* Letter Display */
+h2 {
+    font-size: 36px;
+    color: white;
+    margin: 0;
+}
+
+h2 span {
+    font-weight: bold;
+    color: gray;
+    /* Highlighted letter */
+}
+
+/* Download Link */
+a#text {
+    color: gray;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+a#text:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    img {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+#text {
+    display: none;
+}
+
+/* Footer Styles */
+.site-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    /* Semi-transparent black background */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+    /* Subtle shadow effect */
+}
+
+.footer-content {
+    margin-bottom: 5px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+.footer-content .heart {
+    color: #e74c3c;
+    /* Red heart color */
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #00d4ff;
+    /* Highlight blue color */
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+    /* Highlight effect on hover */
+}
