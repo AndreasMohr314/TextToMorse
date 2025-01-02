@@ -49,7 +49,7 @@ const numberSix = ['6', "./audio/6.wav", "_ . . . ."];
 const numberSeven = ['7', "./audio/7.wav", "_ _ . . ."];
 const numberEight = ['8', "./audio/8.wav", "_ _ _ . ."];
 const numberNine = ['9', "./audio/9.wav", "_ _ _ _ ."];
-const numberZero = ['0', "./audio/0.wav", "_ _ _ _ _"];
+const numberZero = ['0', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/0.wav", "_ _ _ _ _"];
 
 // Symbols
 const space = [' ', "./audio/space.wav", " "];
