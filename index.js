@@ -159,7 +159,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     commitButton.addEventListener("click", function () {
-
+        audioElement.src = "./audio/test.mp3";
+        audioElement.play();
         currentAudioIndex = 0;
         inputText = content.value;
         fillAudioFileList(inputText);
