@@ -2,73 +2,73 @@
                 File Managment
 --------------------------------------------------------------------------------------------*/
 // Letters
-const A = ['A', "/ABC/A.wav", ". _"];
-const B = ['B', "/ABC/B.wav", "_ . . ."];
-const C = ['C', "/ABC/C.wav", "_ . _ ."];
-const D = ['D', "/ABC/D.wav", "_ . ."];
-const E = ['E', "/ABC/E.wav", "."];
-const F = ['F', "/ABC/F.wav", ". . _ ."];
-const G = ['G', "/ABC/G.wav", "_ _ ."];
-const H = ['H', "/ABC/H.wav", ". . . ."];
-const I = ['I', "/ABC/I.wav", ". ."];
-const J = ['J', "/ABC/J.wav", ". _ _ _"];
-const K = ['K', "/ABC/K.wav", "_ . _"];
-const L = ['L', "/ABC/L.wav", ". _ . ."];
-const M = ['M', "/ABC/M.wav", "_ _"];
-const N = ['N', "/ABC/N.wav", "_ ."];
-const O = ['O', "/ABC/O.wav", "_ _ _"];
-const P = ['P', "/ABC/P.wav", ". _ _ ."];
-const Q = ['Q', "/ABC/Q.wav", "_ _ . _"];
-const R = ['R', "/ABC/R.wav", ". _ ."];
-const S = ['S', "/ABC/S.wav", ". . ."];
-const T = ['T', "/ABC/T.wav", "_"];
-const U = ['U', "/ABC/U.wav", ". . _"];
-const V = ['V', "/ABC/V.wav", ". . . _"];
-const W = ['W', "/ABC/W.wav", ". _ _"];
-const X = ['X', "/ABC/X.wav", "_ . . _"];
-const Y = ['Y', "/ABC/Y.wav", "_ . _ _"];
-const Z = ['Z', "/ABC/Z.wav", "_ _ . ."];
+const A = ['A', "/audio/A.wav", ". _"];
+const B = ['B', "/audio/B.wav", "_ . . ."];
+const C = ['C', "/audio/C.wav", "_ . _ ."];
+const D = ['D', "/audio/D.wav", "_ . ."];
+const E = ['E', "/audio/E.wav", "."];
+const F = ['F', "/audio/F.wav", ". . _ ."];
+const G = ['G', "/audio/G.wav", "_ _ ."];
+const H = ['H', "/audio/H.wav", ". . . ."];
+const I = ['I', "/audio/I.wav", ". ."];
+const J = ['J', "/audio/J.wav", ". _ _ _"];
+const K = ['K', "/audio/K.wav", "_ . _"];
+const L = ['L', "/audio/L.wav", ". _ . ."];
+const M = ['M', "/audio/M.wav", "_ _"];
+const N = ['N', "/audio/N.wav", "_ ."];
+const O = ['O', "/audio/O.wav", "_ _ _"];
+const P = ['P', "/audio/P.wav", ". _ _ ."];
+const Q = ['Q', "/audio/Q.wav", "_ _ . _"];
+const R = ['R', "/audio/R.wav", ". _ ."];
+const S = ['S', "/audio/S.wav", ". . ."];
+const T = ['T', "/audio/T.wav", "_"];
+const U = ['U', "/audio/U.wav", ". . _"];
+const V = ['V', "/audio/V.wav", ". . . _"];
+const W = ['W', "/audio/W.wav", ". _ _"];
+const X = ['X', "/audio/X.wav", "_ . . _"];
+const Y = ['Y', "/audio/Y.wav", "_ . _ _"];
+const Z = ['Z', "/audio/Z.wav", "_ _ . ."];
 
 // Special Letters
-const Å = ['Å', "/ABC/Å.wav", ". _ _ . _"];
-const Ä = ['Ä', "/ABC/Ä.wav", ". _ . _"];
-const È = ['È', "/ABC/È.wav", ". _ . . _"];
-const É = ['É', "/ABC/É.wav", ". . _ . ."];
-const Ö = ['Ö', "/ABC/Ö.wav", "_ _ _ ."];
-const Ü = ['Ü', "/ABC/Ü.wav", ". . _ _"];
-const SZ = ['ß', "/ABC/SZ.wav", ". . . _ _ . ."];
-const Ñ = ['Ñ', "/ABC/Ñ.wav", "._.._"];
+const Å = ['Å', "/audio/Å.wav", ". _ _ . _"];
+const Ä = ['Ä', "/audio/Ä.wav", ". _ . _"];
+const È = ['È', "/audio/È.wav", ". _ . . _"];
+const É = ['É', "/audio/É.wav", ". . _ . ."];
+const Ö = ['Ö', "/audio/Ö.wav", "_ _ _ ."];
+const Ü = ['Ü', "/audio/Ü.wav", ". . _ _"];
+const SZ = ['ß', "/audio/SZ.wav", ". . . _ _ . ."];
+const Ñ = ['Ñ', "/audio/Ñ.wav", "._.._"];
 
 // Numbers
-const numberOne = ['1', "/ABC/1.wav", ". _ _ _ _"];
-const numberTwo = ['2', "/ABC/2.wav", ". . _ _ _"];
-const numberThree = ['3', "/ABC/3.wav", ". . . _ _"];
-const numberFour = ['4', "/ABC/4.wav", ". . . . _"];
-const numberFive = ['5', "/ABC/5.wav", ". . . . ."];
-const numberSix = ['6', "/ABC/6.wav", "_ . . . ."];
-const numberSeven = ['7', "/ABC/7.wav", "_ _ . . ."];
-const numberEight = ['8', "/ABC/8.wav", "_ _ _ . ."];
-const numberNine = ['9', "/ABC/9.wav", "_ _ _ _ ."];
-const numberZero = ['0', "/ABC/0.wav", "_ _ _ _ _"];
+const numberOne = ['1', "/audio/1.wav", ". _ _ _ _"];
+const numberTwo = ['2', "/audio2.wav", ". . _ _ _"];
+const numberThree = ['3', "/audio/3.wav", ". . . _ _"];
+const numberFour = ['4', "/audio/4.wav", ". . . . _"];
+const numberFive = ['5', "/audio/5.wav", ". . . . ."];
+const numberSix = ['6', "/audio/6.wav", "_ . . . ."];
+const numberSeven = ['7', "/audio/7.wav", "_ _ . . ."];
+const numberEight = ['8', "/audio/8.wav", "_ _ _ . ."];
+const numberNine = ['9', "/audio/9.wav", "_ _ _ _ ."];
+const numberZero = ['0', "/audio/0.wav", "_ _ _ _ _"];
 
 // Symbols
-const space = [' ', "/ABC/space.wav", " "];
-const point = ['.', "/ABC/point.wav", ". _ . _ . _"];
-const comma = [',', "/ABC/comma.wav", "_ _ . . _ _"];
-const colon = [':', "/ABC/colon.wav", "_ _ _ . . ."];
-const semicolon = [';', "/ABC/semicolon.wav", "_ . _ . _ ."];
-const questionMark = ['?', "/ABC/questionMark.wav", ". . _ _ . ."];
-const exclamationMark = ['!', "/ABC/exclamationMark.wav", "_ ._ . _ _"];
-const hyphen = ['-', "/ABC/hyphen.wav", "_ . . . . _"];
-const underscore = ['_', "/ABC/underscore.wav", ". . _ _ . _"];
-const bracketOn = ['(', "/ABC/bracketOn.wav", "_ . _ _ ."];
-const bracketOff = [')', "/ABC/bracketOff.wav", "_ . _ _ . _"];
-const quotationMarks = ['\'', "/ABC/quotationMarks.wav", ". _ _ _ _ ."];
-const equalSign = ['=', "/ABC/equalSign.wav", "_ . . . _"];
-const plus = ['+', "/ABC/plus.wav", ". _ . _ ."];
-const diagonal = ['/', "/ABC/diagonal.wav", "_ . . _ ."];
-const addSymbol = ['@', "/ABC/addSymbol.wav", ". _ _ . _ ."];
-const doppelQuotationMarks = ['"', "/ABC/doppelQuotationMarks.wav", ". _ . . _ ."];
+const space = [' ', "/audio/space.wav", " "];
+const point = ['.', "/audio/point.wav", ". _ . _ . _"];
+const comma = [',', "/audio/comma.wav", "_ _ . . _ _"];
+const colon = [':', "/audio/colon.wav", "_ _ _ . . ."];
+const semicolon = [';', "/audio/semicolon.wav", "_ . _ . _ ."];
+const questionMark = ['?', "/audio/questionMark.wav", ". . _ _ . ."];
+const exclamationMark = ['!', "/audio/exclamationMark.wav", "_ ._ . _ _"];
+const hyphen = ['-', "/audio/hyphen.wav", "_ . . . . _"];
+const underscore = ['_', "/audio/underscore.wav", ". . _ _ . _"];
+const bracketOn = ['(', "/audio/bracketOn.wav", "_ . _ _ ."];
+const bracketOff = [')', "/audio/bracketOff.wav", "_ . _ _ . _"];
+const quotationMarks = ['\'', "/audio/quotationMarks.wav", ". _ _ _ _ ."];
+const equalSign = ['=', "/audio/equalSign.wav", "_ . . . _"];
+const plus = ['+', "/audio/plus.wav", ". _ . _ ."];
+const diagonal = ['/', "/audio/diagonal.wav", "_ . . _ ."];
+const addSymbol = ['@', "/audio/addSymbol.wav", ". _ _ . _ ."];
+const doppelQuotationMarks = ['"', "/audio/doppelQuotationMarks.wav", ". _ . . _ ."];
 /*-------------------------------------------------------------------------------------------
                 
 --------------------------------------------------------------------------------------------*/
