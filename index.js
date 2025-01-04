@@ -2,73 +2,73 @@
                 File Managment
 --------------------------------------------------------------------------------------------*/
 // Letters
-const A = ['A', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/A.wav", ". _"];
-const B = ['B', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/B.wav", "_ . . ."];
-const C = ['C', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/C.wav", "_ . _ ."];
-const D = ['D', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/D.wav", "_ . ."];
-const E = ['E', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/E.wav", "."];
-const F = ['F', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/F.wav", ". . _ ."];
-const G = ['G', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/G.wav", "_ _ ."];
-const H = ['H', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/H.wav", ". . . ."];
-const I = ['I', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/I.wav", ". ."];
-const J = ['J', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/J.wav", ". _ _ _"];
-const K = ['K', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/K.wav", "_ . _"];
-const L = ['L', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/L.wav", ". _ . ."];
-const M = ['M', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/M.wav", "_ _"];
-const N = ['N', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/N.wav", "_ ."];
-const O = ['O', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/O.wav", "_ _ _"];
-const P = ['P', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/P.wav", ". _ _ ."];
-const Q = ['Q', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/Q.wav", "_ _ . _"];
-const R = ['R', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/R.wav", ". _ ."];
-const S = ['S', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/S.wav", ". . ."];
-const T = ['T', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/T.wav", "_"];
-const U = ['U', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/U.wav", ". . _"];
-const V = ['V', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/V.wav", ". . . _"];
-const W = ['W', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/W.wav", ". _ _"];
-const X = ['X', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/X.wav", "_ . . _"];
-const Y = ['Y', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/Y.wav", "_ . _ _"];
-const Z = ['Z', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/Z.wav", "_ _ . ."];
+const A = ['A', "/A.wav", ". _"];
+const B = ['B', "/B.wav", "_ . . ."];
+const C = ['C', "/C.wav", "_ . _ ."];
+const D = ['D', "/D.wav", "_ . ."];
+const E = ['E', "/E.wav", "."];
+const F = ['F', "/F.wav", ". . _ ."];
+const G = ['G', "/G.wav", "_ _ ."];
+const H = ['H', "/H.wav", ". . . ."];
+const I = ['I', "/I.wav", ". ."];
+const J = ['J', "/J.wav", ". _ _ _"];
+const K = ['K', "/K.wav", "_ . _"];
+const L = ['L', "/L.wav", ". _ . ."];
+const M = ['M', "/M.wav", "_ _"];
+const N = ['N', "/N.wav", "_ ."];
+const O = ['O', "/O.wav", "_ _ _"];
+const P = ['P', "/P.wav", ". _ _ ."];
+const Q = ['Q', "/Q.wav", "_ _ . _"];
+const R = ['R', "/R.wav", ". _ ."];
+const S = ['S', "/S.wav", ". . ."];
+const T = ['T', "/T.wav", "_"];
+const U = ['U', "/U.wav", ". . _"];
+const V = ['V', "/V.wav", ". . . _"];
+const W = ['W', "/W.wav", ". _ _"];
+const X = ['X', "/X.wav", "_ . . _"];
+const Y = ['Y', "/Y.wav", "_ . _ _"];
+const Z = ['Z', "/Z.wav", "_ _ . ."];
 
-// Special Letters
-const Å = ['Å', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/Å.wav", ". _ _ . _"];
-const Ä = ['Ä', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/Ä.wav", ". _ . _"];
-const È = ['È', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/È.wav", ". _ . . _"];
-const É = ['É', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/É.wav", ". . _ . ."];
-const Ö = ['Ö', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/Ö.wav", "_ _ _ ."];
-const Ü = ['Ü', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/Ü.wav", ". . _ _"];
-const SZ = ['ß', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/SZ.wav", ". . . _ _ . ."];
-const Ñ = ['Ñ', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/Ñ.wav", "._.._"];
+// Special Letter
+const Å = ['Å', "/Å.wav", ". _ _ . _"];
+const Ä = ['Ä', "/Ä.wav", ". _ . _"];
+const È = ['È', "/È.wav", ". _ . . _"];
+const É = ['É', "/É.wav", ". . _ . ."];
+const Ö = ['Ö', "/Ö.wav", "_ _ _ ."];
+const Ü = ['Ü', "/Ü.wav", ". . _ _"];
+const SZ = ['ß', "/SZ.wav", ". . . _ _ . ."];
+const Ñ = ['Ñ', "/Ñ.wav", "._.._"];
 
 // Numbers
-const numberOne = ['1', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/1.wav", ". _ _ _ _"];
-const numberTwo = ['2', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/2.wav", ". . _ _ _"];
-const numberThree = ['3', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/3.wav", ". . . _ _"];
-const numberFour = ['4', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/4.wav", ". . . . _"];
-const numberFive = ['5', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/5.wav", ". . . . ."];
-const numberSix = ['6', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/6.wav", "_ . . . ."];
-const numberSeven = ['7', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/7.wav", "_ _ . . ."];
-const numberEight = ['8', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/8.wav", "_ _ _ . ."];
-const numberNine = ['9', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/9.wav", "_ _ _ _ ."];
-const numberZero = ['0', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/0.wav", "_ _ _ _ _"];
+const numberOne = ['1', "/1.wav", ". _ _ _ _"];
+const numberTwo = ['2', "/2.wav", ". . _ _ _"];
+const numberThree = ['3', "/3.wav", ". . . _ _"];
+const numberFour = ['4', "/4.wav", ". . . . _"];
+const numberFive = ['5', "/5.wav", ". . . . ."];
+const numberSix = ['6', "/6.wav", "_ . . . ."];
+const numberSeven = ['7', "/7.wav", "_ _ . . ."];
+const numberEight = ['8', "/8.wav", "_ _ _ . ."];
+const numberNine = ['9', "/9.wav", "_ _ _ _ ."];
+const numberZero = ['0', "/0.wav", "_ _ _ _ _"];
 
 // Symbols
-const space = [' ', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/space.wav", " "];
-const point = ['.', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/point.wav", ". _ . _ . _"];
-const comma = [',', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/comma.wav", "_ _ . . _ _"];
-const colon = [':', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/colon.wav", "_ _ _ . . ."];
-const semicolon = [';', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/semicolon.wav", "_ . _ . _ ."];
-const questionMark = ['?', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/questionMark.wav", ". . _ _ . ."];
-const exclamationMark = ['!', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/exclamationMark.wav", "_ ._ . _ _"];
-const hyphen = ['-', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/hyphen.wav", "_ . . . . _"];
-const underscore = ['_', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/underscore.wav", ". . _ _ . _"];
-const bracketOn = ['(', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/bracketOn.wav", "_ . _ _ ."];
-const bracketOff = [')', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/bracketOff.wav", "_ . _ _ . _"];
-const quotationMarks = ['\'', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/quotationMarks.wav", ". _ _ _ _ ."];
-const equalSign = ['=', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/equalSign.wav", "_ . . . _"];
-const plus = ['+', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/plus.wav", ". _ . _ ."];
-const diagonal = ['/', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/diagonal.wav", "_ . . _ ."];
-const addSymbol = ['@', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/addSymbol.wav", ". _ _ . _ ."];
-const doppelQuotationMarks = ['"', "https://github.com/AndreasMohr314/TextToMorse/blob/main/audio/doppelQuotationMarks.wav", ". _ . . _ ."];
+const space = [' ', "/space.wav", " "];
+const point = ['.', "/point.wav", ". _ . _ . _"];
+const comma = [',', "/comma.wav", "_ _ . . _ _"];
+const colon = [':', "/colon.wav", "_ _ _ . . ."];
+const semicolon = [';', "/semicolon.wav", "_ . _ . _ ."];
+const questionMark = ['?', "/questionMark.wav", ". . _ _ . ."];
+const exclamationMark = ['!', "/exclamationMark.wav", "_ ._ . _ _"];
+const hyphen = ['-', "/hyphen.wav", "_ . . . . _"];
+const underscore = ['_', "/underscore.wav", ". . _ _ . _"];
+const bracketOn = ['(', "/bracketOn.wav", "_ . _ _ ."];
+const bracketOff = [')', "httpsudio/bracketOff.wav", "_ . _ _ . _"];
+const quotationMarks = ['\'', "/quotationMarks.wav", ". _ _ _ _ ."];
+const equalSign = ['=', "/equalSign.wav", "_ . . . _"];
+const plus = ['+', "/plus.wav", ". _ . _ ."];
+const diagonal = ['/', "/diagonal.wav", "_ . . _ ."];
+const addSymbol = ['@', "/addSymbol.wav", ". _ _ . _ ."];
+const doppelQuotationMarks = ['"', "/doppelQuotationMarks.wav", ". _ . . _ ."];
 /*-------------------------------------------------------------------------------------------
                 
 --------------------------------------------------------------------------------------------*/
