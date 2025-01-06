@@ -1,12 +1,18 @@
+/* General styles */
 body {
     margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
     font-family: Arial, sans-serif;
     background: url(img/background.webp) no-repeat center center fixed;
     background-size: cover;
     color: white;
 }
 
-/* Header Styles */
+/* Header styles */
 .site-header {
     display: flex;
     justify-content: space-between;
@@ -15,6 +21,7 @@ body {
     background: rgba(0, 0, 0, 0.8);
     /* Semi-transparent background */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
 }
 
 .logo h1 {
@@ -25,7 +32,6 @@ body {
 
 .logo .highlight {
     color: gray;
-    /* Glowing blue color */
 }
 
 .nav-links {
@@ -47,34 +53,33 @@ body {
 }
 
 .nav-links a:hover {
-
-    color: gray
-        /* color: #00d4ff; */
-        /* Highlight on hover */
+    color: gray;
 }
 
-/* General Styles for Main Section */
+/* Main content styles */
 main {
+    flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 80vh;
-
+    align-items: flex-start;
+    /* Align content to the top */
     width: 100%;
+    overflow-y: auto;
+    box-sizing: border-box;
+    margin: 60px 0 40px;
+    /* Space for header and footer */
+    padding: 20px;
 }
-
-
 
 .nav-main {
     background: rgba(0, 0, 0, 0.95);
-    /* Semi-transparent black background */
     padding: 20px 30px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    /* Smooth shadow for depth */
     text-align: center;
     max-width: 800px;
     width: 100%;
+    margin: 0 auto;
 }
 
 .ul-main {
@@ -95,7 +100,7 @@ main {
     /* Space between elements inside list items */
 }
 
-/* Input and Button Styles */
+/* Input and button styles */
 input[type="text"] {
     padding: 10px;
     width: 70%;
@@ -111,7 +116,6 @@ button {
     border: none;
     border-radius: 8px;
     background: #3c6972;
-    /* Bright blue for a modern feel */
     color: white;
     cursor: pointer;
     transition: background 0.3s ease;
@@ -119,7 +123,6 @@ button {
 
 button:hover {
     background: #02aeec;
-    /* Darker blue on hover */
 }
 
 img {
@@ -134,7 +137,7 @@ img:hover {
     /* Slightly enlarges the icon on hover */
 }
 
-/* Letter Display */
+/* Typography styles */
 h2 {
     font-size: 36px;
     color: white;
@@ -144,10 +147,8 @@ h2 {
 h2 span {
     font-weight: bold;
     color: gray;
-    /* Highlighted letter */
 }
 
-/* Download Link */
 a#text {
     color: gray;
     text-decoration: none;
@@ -158,44 +159,18 @@ a#text:hover {
     text-decoration: underline;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav {
-        max-width: 90%;
-        padding: 15px;
-    }
-
-    input[type="text"] {
-        width: 100%;
-    }
-
-    button {
-        font-size: 14px;
-    }
-
-    img {
-        height: 30px;
-        width: 30px;
-    }
-}
-
-#text {
-    display: none;
-}
-
-/* Footer Styles */
+/* Footer styles */
 .site-footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    /* Semi-transparent black background */
+    background: rgba(0, 0, 0, 1);
     color: white;
     text-align: center;
     padding: 10px 0;
     font-size: 14px;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
-    /* Subtle shadow effect */
+    z-index: 1000;
 }
 
 .footer-content {
@@ -227,5 +202,29 @@ a#text:hover {
 
 .footer-links a:hover {
     color: white;
-    /* Highlight effect on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    img {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+#text {
+    display: none;
 }
