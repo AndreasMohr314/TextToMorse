@@ -14,7 +14,19 @@
         <div class="logo">
             <h1>TextTO<span class="highlight">Morse</span></h1>
         </div>
-        <nav>
+        <nav class="desktop-nav">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="burger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="mobile-nav">
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -76,11 +88,19 @@
         </div>
     </footer>
 
-    <script src="index.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const burgerMenu = document.querySelector(".burger-menu");
+            const mobileNav = document.querySelector(".mobile-nav");
+
+            burgerMenu.addEventListener("click", () => {
+                // Toggle the "active" class for mobile navigation
+                mobileNav.classList.toggle("active");
+            });
+        });
+    </script>
 
 
 </body>
-
-
 
 </html>

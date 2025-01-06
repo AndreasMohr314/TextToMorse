@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function () {
             currentLetter.textContent = letter + " " + morseCode;
         }
 
-    }
+    };
 
     // creates the array of audio files vom the user text
     function fillAudioFileList(inputText) {
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
         }
-    }
+    };
 
     function playCurrentAudio() {
         if (currentAudioIndex < audioFiles.length) {
@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function () {
             audioElement.play();
             isPlaying = true;
         }
-    }
+    };
     /*-------------------------------------------------------------------------------------------
                     
     --------------------------------------------------------------------------------------------*/
@@ -197,6 +197,15 @@ document.addEventListener('DOMContentLoaded', function () {
         combineMultipleWavFiles(urls);
 
     });
+
+
+    const burgerMenu = document.querySelector(".burger-menu");
+    const mobileNav = document.querySelector(".mobile-nav");
+
+    burgerMenu.addEventListener("click", () => {
+        mobileNav.classList.toggle("active");
+    });
+
 
     /*-------------------------------------------------------------------------------------------
                     

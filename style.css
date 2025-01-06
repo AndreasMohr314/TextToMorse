@@ -228,3 +228,77 @@ a#text:hover {
 #text {
     display: none;
 }
+
+/* Burger menu styles */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.burger-menu .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+/* Mobile navigation */
+.mobile-nav {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 60px;
+    /* Below the header */
+    right: 0;
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+    max-height: 0;
+    /* Initially collapsed */
+}
+
+.mobile-nav.active {
+    display: block;
+    max-height: 300px;
+    /* Adjust based on your menu size */
+}
+
+.mobile-nav .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-nav .nav-links li {
+    margin: 10px 0;
+}
+
+.mobile-nav .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Responsive design for the burger menu */
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .mobile-nav {
+        position: fixed;
+    }
+}
