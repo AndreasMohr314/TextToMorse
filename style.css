@@ -19,7 +19,6 @@ body {
     align-items: center;
     padding: 20px 40px;
     background: rgba(0, 0, 0, 0.8);
-    /* Semi-transparent background */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     z-index: 1000;
 }
@@ -62,13 +61,14 @@ main {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    /* Align content to the top */
     width: 100%;
     overflow-y: auto;
     box-sizing: border-box;
     margin: 60px 0 40px;
     /* Space for header and footer */
     padding: 20px;
+    padding-bottom: 60px;
+    /* Adjust this value to match footer height */
 }
 
 .nav-main {
@@ -89,7 +89,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /* Adds spacing between list items */
 }
 
 .li-main {
@@ -97,7 +96,6 @@ main {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    /* Space between elements inside list items */
 }
 
 /* Input and button styles */
@@ -134,7 +132,6 @@ img {
 
 img:hover {
     transform: scale(1.1);
-    /* Slightly enlarges the icon on hover */
 }
 
 /* Typography styles */
@@ -184,7 +181,6 @@ a#text:hover {
 
 .footer-content .heart {
     color: #e74c3c;
-    /* Red heart color */
 }
 
 .footer-links {
@@ -196,37 +192,11 @@ a#text:hover {
 .footer-links a {
     text-decoration: none;
     color: #00d4ff;
-    /* Highlight blue color */
     transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
     color: white;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    nav {
-        max-width: 90%;
-        padding: 15px;
-    }
-
-    input[type="text"] {
-        width: 100%;
-    }
-
-    button {
-        font-size: 14px;
-    }
-
-    img {
-        height: 30px;
-        width: 30px;
-    }
-}
-
-#text {
-    display: none;
 }
 
 /* Burger menu styles */
@@ -252,20 +222,17 @@ a#text:hover {
     background-color: rgba(0, 0, 0, 0.9);
     position: absolute;
     top: 60px;
-    /* Below the header */
     right: 0;
     width: 100%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     transition: max-height 0.3s ease-in-out;
     overflow: hidden;
     max-height: 0;
-    /* Initially collapsed */
 }
 
 .mobile-nav.active {
     display: block;
     max-height: 300px;
-    /* Adjust based on your menu size */
 }
 
 .mobile-nav .nav-links {
@@ -288,7 +255,7 @@ a#text:hover {
     font-weight: bold;
 }
 
-/* Responsive design for the burger menu */
+/* Responsive design */
 @media (max-width: 768px) {
     .desktop-nav {
         display: none;
@@ -301,4 +268,21 @@ a#text:hover {
     .mobile-nav {
         position: fixed;
     }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    img {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+#text {
+    display: none;
 }
