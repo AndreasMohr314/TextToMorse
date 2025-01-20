@@ -1,3 +1,6 @@
+<!-- This code was written by Andreas Mohr.  -->
+<!-- Last change 20.01.2025. -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +15,9 @@
 <body>
     <header class="site-header">
         <div class="logo">
-            <h1>TextTO<span class="highlight">Morse</span></h1>
+            <a href="index.html" class="header-link">
+                <h1>TextTO<span class="highlight">Morse</span></h1>
+            </a>
         </div>
         <nav class="desktop-nav">
             <ul class="nav-links">
@@ -37,7 +42,7 @@
     <main>
         <nav class="nav-main">
             <ul class="ul-main">
-                <li class="li-main"><input type="text" id="content" placeholder="Hallo"><button
+                <li class="li-main"><input type="text" id="content" placeholder="Hallo" maxlength="50"><button
                         id="commitButton">Commit</button></li>
                 <li class="li-main"><img src="./img/play_pause.png" id="playPauseButton" alt="Play Button"><img
                         src="./img/back.png" id="backButton" alt="Stop Button">
@@ -65,11 +70,9 @@
         </div>
     </footer>
 
-    <script src="index.js"></script>
+    <script type="module" src="index.js"></script>
 
 
 </body>
-
-
 
 </html>

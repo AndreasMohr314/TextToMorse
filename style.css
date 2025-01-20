@@ -1,4 +1,6 @@
-/* General styles */
+/* This code was written by Andreas Mohr.
+Last change 20.01.2025. */
+
 body {
     margin: 0;
     padding: 0;
@@ -12,7 +14,6 @@ body {
     color: white;
 }
 
-/* Header styles */
 .site-header {
     display: flex;
     justify-content: space-between;
@@ -21,6 +22,11 @@ body {
     background: rgba(0, 0, 0, 0.8);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     z-index: 1000;
+}
+
+.header-link {
+    text-decoration: none;
+    color: inherit;
 }
 
 .logo h1 {
@@ -55,7 +61,6 @@ body {
     color: gray;
 }
 
-/* Main content styles */
 main {
     flex: 1;
     display: flex;
@@ -65,10 +70,8 @@ main {
     overflow-y: auto;
     box-sizing: border-box;
     margin: 60px 0 40px;
-    /* Space for header and footer */
     padding: 20px;
     padding-bottom: 60px;
-    /* Adjust this value to match footer height */
 }
 
 .nav-main {
@@ -98,7 +101,6 @@ main {
     gap: 10px;
 }
 
-/* Input and button styles */
 input[type="text"] {
     padding: 10px;
     width: 70%;
@@ -134,7 +136,6 @@ img:hover {
     transform: scale(1.1);
 }
 
-/* Typography styles */
 h2 {
     font-size: 36px;
     color: white;
@@ -156,7 +157,6 @@ a#text:hover {
     text-decoration: underline;
 }
 
-/* Footer styles */
 .site-footer {
     position: fixed;
     bottom: 0;
@@ -199,7 +199,6 @@ a#text:hover {
     color: white;
 }
 
-/* Burger menu styles */
 .burger-menu {
     display: none;
     flex-direction: column;
@@ -216,7 +215,6 @@ a#text:hover {
     border-radius: 2px;
 }
 
-/* Mobile navigation */
 .mobile-nav {
     display: none;
     background-color: rgba(0, 0, 0, 0.9);
@@ -255,7 +253,6 @@ a#text:hover {
     font-weight: bold;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
     .desktop-nav {
         display: none;
