@@ -3,6 +3,66 @@
 
 /*-------------------------------------------------------------------------------------------
                 Wave file combiner
+
+This is the heart of the project.
+This function combines the wave file of the commited letters and modified the header.
+All in the browser to download.
+
+
+                WAV Header
+
+A .wav header is 44 bytes in size and divided into various fields containing metadata 
+about the audio file. This header adheres to the RIFF format (Resource Interchange File Format) 
+and includes key fields such as Chunk ID, File Size, Format, Subchunk, Channels, Sample Rate, Bitrate, and more.
+
+    1               2               3               4              
+    0 1 2 3 4 5 6 7 0 1 2 3 4 5 6 7 0 1 2 3 4 5 6 7 0 1 2 3 4 5 6 7
+0  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                         Chunk ID ("RIFF")                     |
+   |                             (ASCII)                           |
+4  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                            Chunk Size                         |
+8  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                    Format ("WAVE" in ASCII)                   |
+12 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |               Subchunk1 ID ("fmt " in ASCII)                  |
+16 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                Subchunk1 Size (min. 16 for PCM)               |
+20 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |      Audio Format (1 = PCM)    |      Number of Channels      |
+   |                                |      (Mono=1, Stereo=2)      |
+24 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                       Sample Rate (Hz)                        |
+28 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                     Byte Rate (Bytes/sec)                     |
+32 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |            Block Align         |        Bits per Sample       |
+   |(Number of bytes *Bits/Sample/8)|      (z.B. 8, 16, 24, 32)    |
+36 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                   Subchunk2 ID ("data" in ASCII)              |
+40 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                    Subchunk2 Size (Data length)               |
+44 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                    Audiodaten (variable length)               |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   
+Explanation of the Fields
+
+    Chunk ID: Contains the string "RIFF" to identify the RIFF format.
+    Chunk Size: The size of the entire file starting from byte 8 (44 bytes in total).
+    Format: Contains the string "WAVE" to indicate it is a WAV file.
+    Subchunk1 ID: Identifies the subchunk as "fmt ", which contains information about the audio format.
+    Subchunk1 Size: Usually 16 for PCM audio files.
+    Audio Format: 1 indicates uncompressed PCM format.
+    Number of Channels: Number of channels (e.g., 1 for mono, 2 for stereo).
+    Sample Rate: Sampling rate, e.g., 44100 Hz.
+    Byte Rate: Calculated as Sample Rate × Number of Channels × Bits per Sample ÷ 8.
+    Block Align: Number of Channels × Bits per Sample ÷ 8. Indicates the number of bytes required for one sample.
+    Bits per Sample: Bit depth of the samples (e.g., 16 for 16-bit audio).
+    Subchunk2 ID: Identifies the audio data section with "data".
+    Subchunk2 Size: Size of the audio data in bytes.
+    Audio Data: The section containing the actual PCM audio data.
+
 --------------------------------------------------------------------------------------------*/
 export async function combineMultipleWavFiles(urls) {
     // The header size of a WAV file is 44 bytes
