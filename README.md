@@ -17,5 +17,3 @@ Everything is implemented using **vanilla JavaScript**, **CSS**, and **HTML**.
 The core of this project is the `waveFileCombiner.js`, which enables combining individual `.wav` files for letters and symbols at a binary level directly in the browser. This component is essential for creating seamless Morse code audio.
 
 ---
-
-Feel free to replace [TextToMorse](https://andreasmohr314.github.io/TextToMorse/) with the actual URL of your GitHub Pages deployment.
